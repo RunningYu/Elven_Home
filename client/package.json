@@ -1,0 +1,23 @@
+{
+  "name": "@elven/client",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter @elven/app dev",
+    "pro": "pnpm --filter @elven/app pro",
+    "mock": "pnpm --filter @elven/app mock",
+    "dev:debug": "pnpm --filter @elven/app dev:debug"
+  },
+  "devDependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@types/node": "^20.2.4",
+    "cross-env": "^7.0.3",
+    "pinia": "^2.0.36",
+    "typescript": "^5.0.2",
+    "vue-router": "^4.2.0"
+  }
+}

@@ -1,0 +1,29 @@
+server:
+  port: 3188
+
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates
+    mode: HTML
+  datasource:
+    url: jdbc:mysql://rm-j6c2k7uyo6n6o2870no.mysql.rds.aliyuncs.com:3306/elven_home?useSSL=false
+    username: slx
+    password: slx_9920
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 50MB     # ????????
+      max-request-size: 50MB  # ????????????
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+minio:
+  endpoint: http://8.134.164.93:9001
+  accessKey: minio
+  secretKey: minio123
+  bucket: file

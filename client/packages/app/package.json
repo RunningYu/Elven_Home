@@ -1,0 +1,48 @@
+{
+  "name": "@elven/app",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev:debug": "cross-env DEBUG=vite:deps vite --force",
+    "dev": "vite --force --host",
+    "mock": "vite --force  --mode mock",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "npx lint-staged"
+  },
+  "dependencies": {
+    "@elven/ui": "workspace:^",
+    "@elven/utils": "workspace:^",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.6",
+    "@iconify/json": "^2.2.65",
+    "@types/mockjs": "^1.0.7",
+    "@unocss/eslint-config": "^0.51.13",
+    "@unocss/preset-icons": "^0.51.13",
+    "@unocss/preset-web-fonts": "^0.51.13",
+    "@unocss/reset": "^0.51.13",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vueuse/core": "^10.1.2",
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
+    "element-plus": "^2.3.4",
+    "eslint": "^8.40.0",
+    "lint-staged": "^13.2.2",
+    "mockjs": "^1.1.0",
+    "pinia": "^2.0.36",
+    "sass": "^1.62.1",
+    "scss": "^0.2.4",
+    "typescript": "^5.0.2",
+    "unocss": "^0.51.12",
+    "unplugin-auto-import": "^0.15.3",
+    "vite": "^4.3.8",
+    "vitest": "^0.31.0",
+    "vue-tsc": "^1.4.2"
+  },
+  "lint-staged": {
+    "src/*": "eslint --fix"
+  }
+}
