@@ -9,9 +9,9 @@ spring:
     prefix: classpath:/templates
     mode: HTML
   datasource:
-    url: jdbc:mysql://rm-j6c2k7uyo6n6o2870no.mysql.rds.aliyuncs.com:3306/elven_home?useSSL=false
-    username: slx
-    password: slx_9920
+    url: xxx
+    username: xxx
+    password: xxx
     driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
     multipart:
