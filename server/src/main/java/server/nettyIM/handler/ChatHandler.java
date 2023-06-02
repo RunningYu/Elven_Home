@@ -65,7 +65,6 @@ public class ChatHandler {
         UserDTO targetUserDTO = new UserDTO();
         // 封装接收者的学号
         if (!StringUtil.isNullOrEmpty(chat.getTargetToken())) {
-//            targetUserDTO = userDao.getUserFromToken(chat.getTargetToken());
             String targetStudentId = chat.getTargetToken();
             targetUserDTO = userDao.getUserByStudentId(targetStudentId);
             messageDTO.setTargetStudentId( targetUserDTO.getStudentId() );
@@ -90,7 +89,7 @@ public class ChatHandler {
                     targetChannel.writeAndFlush( new TextWebSocketFrame(JSON.toJSONString(msgResponse)) );
                     log.info("ChatHandler execute  --> PRIVATE 私聊消息: " + JSON.toJSONString(msgResponse));
                 }
-//                ctx.channel().writeAndFlush(new TextWebSocketFrame(JSON.toJSONString(msgResponse)));
+                ctx.channel().writeAndFlush(new TextWebSocketFrame(JSON.toJSONString(msgResponse)));
                 // 记录聊天信息
                 doMessage(messageDTO);
                 break;
