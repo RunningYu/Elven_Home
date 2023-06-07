@@ -23,7 +23,7 @@ mybatis:
     map-underscore-to-camel-case: true
 
 minio:
-  endpoint: http://8.134.164.93:9001
-  accessKey: minio
-  secretKey: minio123
-  bucket: file
+  endpoint:  # ip + 端口
+  accessKey: # 用户名
+  secretKey: # 密码
+  bucket: # 自己创建的桶名
